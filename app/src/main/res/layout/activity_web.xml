@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_peer_c"
+    android:orientation="vertical"
+    android:id="@+id/ticket_linear"
+
+    tools:context="com.hengda.smart.gxkjg.ui.web.WebAc">
+    <include layout="@layout/tilte_layout"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/rl">
+
+<WebView
+    android:id="@+id/webview_ac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:layout_weight="5"
+    ></WebView>
+    </LinearLayout>
+
+</LinearLayout>

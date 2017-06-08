@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@mipmap/dialog_bg"
+    android:layout_height="240dp"
+    android:layout_gravity="center"
+    android:id="@+id/dialog_linear">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:layout_marginTop="20dp"
+    android:textColor="#5c70fd"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:text="@string/notice"/>
+<TextView
+    android:id="@+id/swip_floor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#5c70fd"
+    android:textSize="15sp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_marginTop="12dp"
+    android:layout_gravity="center_horizontal"
+    />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@mipmap/blue_dialog"
+        android:id="@+id/dialog_btnsure" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancel"
+        android:textColor="#aa0000ff"
+        android:background="@mipmap/white_dialog"
+        android:id="@+id/dialog_btndeny" />
+</LinearLayout>

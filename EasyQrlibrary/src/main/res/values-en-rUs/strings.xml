@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_scan">Scam QR code in the frame.</string>
+    <string name="scan">swap</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_a_comm_o"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_size"
+        android:layout_marginTop="@dimen/action_bar_m_t">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            style="@style/iv_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_set_auto_mode" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvAuto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_toRightOf="@+id/ivAuto"-->
+            <!--android:text="@string/auto_guide"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp"/>-->
+
+            <TextView
+                android:id="@+id/tvAuto"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ivAuto"
+
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/auto_guide"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <!--<Switch-->
+            <!--android:id="@+id/switch_on"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@id/tvAuto"-->
+            <!--android:textOn="ON"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:showText="true"-->
+            <!--android:textSize="6sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textOff="OFF"/>-->
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch_on"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:paddingRight="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvAuto"
+                android:gravity="center"
+                android:background="@null"
+                app:kswAnimationDuration="300"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.4"
+                app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                app:kswThumbMarginBottom="-8dp"
+                app:kswThumbMarginLeft="-4dp"
+                app:kswThumbMarginRight="-4dp"
+                app:kswThumbMarginTop="-2.5dp"
+
+
+                />
+
+
+            <!--<Switch-->
+            <!--android:id="@+id/switch_on"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_toRightOf="@id/tvAuto"-->
+            <!--android:textOn="OFF"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textOff="ON"/>-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivResLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_set_load_res" />
+
+            <TextView
+                android:id="@+id/tvResLoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/ivResLoad"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/res_download"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_set_version" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/ivVersion"
+                android:text="@string/version_info"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_set_lang_sle" />
+
+            <TextView
+                android:id="@+id/tvLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/ivLang"
+                android:text="@string/lang_select"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/iv_user_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/user" />
+
+            <TextView
+                android:id="@+id/tv_userchoose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/iv_user_choose"
+                android:text="@string/user_choose"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivResDle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_set_delete_res" />
+
+            <TextView
+                android:id="@+id/tvResDle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/ivResDle"
+                android:text="@string/delete_res"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

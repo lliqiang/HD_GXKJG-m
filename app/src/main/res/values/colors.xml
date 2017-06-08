@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#7c54fb</color>
+    <color name="colorPrimaryDark">#8050fb</color>
+    <color name="colorAccent">#352468</color>
+
+    <color name="blackLight">#212121</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteLight">#F0F0F0</color>
+    <color name="grey">#7c7c7a</color>
+    <color name="tranBlackDark">#66000000</color>
+    <color name="tranBlackLight">#22000000</color>
+    <color name="tranWhite">#AAFFFFFF</color>
+    <color name="tranWhiteLight">#22FFFFFF</color>
+    <color name="aColorAccent">#2fd1db</color>
+    <color name="unitadut">#005aff</color>
+    <color name="unitchild">#ff9b30</color>
+
+
+</resources>

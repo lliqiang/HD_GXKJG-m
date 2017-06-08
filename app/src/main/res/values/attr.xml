@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<declare-styleable name="SwitchButton">-->
+        <!--&lt;!&ndash; Drawable of cursor, press status supported&ndash;&gt;-->
+        <!--<attr name="cursor" format="reference"/>-->
+        <!--<attr name="selectedBG" format="color"/>-->
+        <!--<attr name="unselectedBG" format="color"/>-->
+        <!--<attr name="moveDuration" format="integer"/>-->
+        <!--<attr name="trackWidth" format="dimension"/>-->
+        <!--<attr name="trackPadding" format="dimension"/>-->
+        <!--<attr name="cursorTouchExpand" format="dimension"/>-->
+        <!--<attr name="status" format="enum">-->
+            <!--<enum name="ON" value="0x00"/>-->
+            <!--<enum name="OFF" value="0x01"/>-->
+        <!--</attr>-->
+
+        <!--&lt;!&ndash; about shadow&ndash;&gt;-->
+        <!--<attr name="shadowExpand" format="dimension"/>-->
+        <!--<attr name="shadowXDiff" format="dimension"/>-->
+        <!--<attr name="shadowYDiff" format="dimension"/>-->
+        <!--&lt;!&ndash; Drawable of cursor's shadow , Gradientdrawable recommend&ndash;&gt;-->
+        <!--<attr name="shadow" format="reference"/>-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="ParticleView">
+        <attr name="startX" format="float"/>
+        <attr name="startY" format="float"/>
+        <attr name="particleImg" format="reference"/>
+        <attr name="particleSpeed" format="integer"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="RatingBar" tools:ignore="ResourceName">-->
+        <!--<attr name="starImageSize" format="dimension"/>-->
+        <!--<attr name="starImageWidth" format="dimension"/>-->
+        <!--<attr name="starImageHeight" format="dimension"/>-->
+        <!--<attr name="starImagePadding" format="dimension"/>-->
+        <!--<attr name="starCount" format="integer"/>-->
+        <!--<attr name="starNum" format="integer"/>-->
+        <!--<attr name="starEmpty" format="reference"/>-->
+        <!--<attr name="starFill" format="reference"/>-->
+        <!--<attr name="starHalf" format="reference"/>-->
+        <!--<attr name="clickable" format="boolean"/>-->
+        <!--<attr name="halfstart" format="boolean"/>-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="SwitchButton">
+    <attr name="kswThumbDrawable" format="reference"/>
+    <attr name="kswThumbColor" format="color|reference"/>
+    <attr name="kswThumbMargin" format="dimension|reference"/>
+    <attr name="kswThumbMarginTop" format="dimension|reference"/>
+    <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+    <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+    <attr name="kswThumbMarginRight" format="dimension|reference"/>
+    <attr name="kswThumbWidth" format="dimension|reference"/>
+    <attr name="kswThumbHeight" format="dimension|reference"/>
+    <attr name="kswThumbRadius" format="dimension|reference"/>
+    <attr name="kswBackRadius" format="dimension|reference"/>
+    <attr name="kswBackDrawable" format="reference"/>
+    <attr name="kswBackColor" format="color|reference"/>
+    <attr name="kswFadeBack" format="boolean"/>
+    <attr name="kswBackMeasureRatio" format="float"/>
+    <attr name="kswAnimationDuration" format="integer"/>
+    <attr name="kswTintColor" format="color|reference"/>
+    <attr name="kswTextOn" format="string"/>
+    <attr name="kswTextOff" format="string"/>
+    <attr name="kswTextMarginH" format="dimension"/>
+    <attr name="kswAutoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <attr name="rb_max_count" format="integer"/>
+        <attr name="rb_count" format="integer"/>
+        <attr name="rb_fill" format="reference"/>
+        <attr name="rb_empty" format="reference"/>
+        <attr name="rb_space" format="dimension"/>
+        <attr name="rb_click_rating" format="boolean"/>
+        <attr name="rb_touch_rating" format="boolean"/>
+    </declare-styleable>
+</resources>

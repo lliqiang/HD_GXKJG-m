@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hengda.smart.gxkjg"
+    android:versionCode="301"
+    android:versionName="3.0.1"> <!-- 友盟 -->
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!-- 百度地图的权限 -->
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 极光推送的权限 -->
+    <!--   Required -->
+    <permission
+        android:name="com.guangxi.exporttounity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!--   Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.guangxi.exporttounity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--   Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--   用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- sd卡存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 相机 二维码 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- shareSDK权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- <&#45;&#45; 摄影机 &ndash;&gt; -->
+    <!-- 蓝牙分享所需的权限 -->
+    <application
+        android:name="com.hengda.smart.gxkjg.app.HdApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/lauch"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gUcKTx7TRDz2zNL9jRt0yZOTa1sHTnPk" />
+
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+       <activity android:name="cn.jpush.android.ui.PushActivity" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar" android:exported="false">
+         <intent-filter>
+        <action android:name="cn.jpush.android.ui.PushActivity" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="exporttounity.guangxi.com.myapplication" />
+    </intent-filter>
+    </activity>
+        -->
+        <!-- &lt;!&ndash;  Required SDK核心功能 -->
+        <!-- <category android:name="com.guangxi.exporttounity" />-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hengda.smart.guangxitech" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="exporttounity.guangxi.com.myapplication" />
+            </intent-filter>
+        </service>
+        <!--   Required SDK核心功能 -->
+        <!-- Required  显示通知栏  <category android:name="com.guangxi.exporttounity" />   -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.hengda.smart.guangxitech" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!--   Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!--   Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- <meta-data android:name="JPUSH_APPKEY" android:value="73449aba2b9f62ab9a3a41f0" /> -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="27b687a6e1240e69fbb85eb6" />
+        <!-- f89e78f44368f4c8fb741029 -->
+        <!--    </>值来自开发者平台取得的AppKey -->
+        <!-- <receiver android:name=".ui.common.JpushBroadReciever" -->
+        <!-- android:exported="false" -->
+        <!-- android:enabled="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.intent.REGISTRATION" /> &lt;!&ndash;Required  用户注册SDK的intent&ndash;&gt; -->
+        <!-- <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> &lt;!&ndash;Required  用户接收SDK消息的intent&ndash;&gt; -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> &lt;!&ndash;Required  用户接收SDK通知栏信息的intent&ndash;&gt; -->
+        <!-- <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> &lt;!&ndash;Required  用户打开自定义通知栏的intent&ndash;&gt; -->
+        <!-- <action android:name="cn.jpush.android.intent.CONNECTION" />&lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt; -->
+        <!-- <category android:name="com.hengda.smart.guangxitech" /> -->
+
+
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- 用户类型选择 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.SleUserActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 语言选择 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.SleLangActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- AR扫描 -->
+
+
+        <!-- 儿童-主界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.MainChildActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 儿童-搜索界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.SearchChildActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 儿童-设置界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.SetChildActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            >
+        </activity>
+        <activity android:name="com.hengda.smart.gxkjg.ui.web.ThemeAcChild" />
+        <!-- 儿童-地图界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.MapChildActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 成人-主界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.MainAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 成人-搜索界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.SearchAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 成人-设置界面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.SetAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <service android:name="com.hengda.smart.common.autono.BleNoService" />
+        <!-- 成人我的同伴-创建 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.PeerEntryAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 成人我的同伴-详情 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.PeerMainAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 儿童详情 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.PeerMainChildActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 成人-列表导览 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.ListAdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 成人3F-列表导览 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.ListF3AdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 成人4F-列表导览 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.ListF4AdultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 成人地图页面 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.adult.MapAdultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <!-- 成人详情界面 -->
+        <activity
+            android:name="com.hengda.smart.play.Play"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 儿童详情界面 -->
+        <activity
+            android:name="com.hengda.smart.play.ChildPlay"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 视频播放 -->
+        <activity
+            android:name="com.hengda.smart.play.VedioAc"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.CallAc"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.OpenAc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.ThemeAc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.TransAc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.hengda.smart.play.CommentAc" />
+        <!-- 儿童-我的同伴  -创建 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.child.CMyCompany"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.WebAc"
+            android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- 长按识别二维码 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.QringAc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.UriActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.DeCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.common.AdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.hengda.smart.gxkjg.ui.common.ReflectActivity" />
+        <activity android:name="com.hengda.smart.gxkjg.ui.web.EditActivity" />
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.TextWeb"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.hengda.smart.gxkjg.ui.common.NaviGativeActivity" />
+        <!-- 扫描卡片的网页 -->
+        <activity
+            android:name="com.hengda.smart.gxkjg.ui.web.TextWebView"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.hengda.smart.gxkjg.ui.common.MapActivity"></activity>
+        <activity android:name="com.hengda.smart.gxkjg.ui.common.HtmlActivity" />
+        <activity
+            android:name="com.hengda.smart.common.permission.AcpActivity"
+            android:launchMode="singleTask" />
+        <!-- UMeng统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58856bf74ad1565d790029e8" />
+        <!-- <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/> -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity android:name="com.hengda.smart.gxkjg.ui.common.CommonMap"></activity>
+    </application>
+
+</manifest>

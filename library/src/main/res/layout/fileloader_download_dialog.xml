@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dip"
+        android:textColor="#4d4d4d"
+        android:text="正在下载"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dip">
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="2.03M"
+            android:textColor="#ffa200"/>
+
+        <com.hengda.frame.fileloader.download.NumberProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"
+            android:layout_toLeftOf="@id/size"
+            app:progress_reached_color="#ffa200"
+            app:progress_text_color="#ffa200"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textColor="#ffa200"/>
+</LinearLayout>

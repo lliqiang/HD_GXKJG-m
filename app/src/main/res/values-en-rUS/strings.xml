@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Guangxi Science and Technology Museum</string>
+    <!-- 用户类型-->
+    <!-- 语种-->
+    <!--设置-->
+    <string name='set'>Settings </string>
+    <string name='auto_guide'>Automatic Audio Guide Positioning</string>
+    <string name='res_download'>Download</string>
+    <string name='version_info'>Version Information</string>
+    <string name='lang_select'>Language</string>
+    <string name='delete_res'>Eliminate Resources</string>
+    <string name='user_choose'>User Selection</string>
+    <!--攻略-->
+    <string name='raider_ticket'>Ticket</string>
+    <string name='raider_peer'>My Companion</string>
+    <string name='raider_route'>Traffic Line</string>
+    <string name='raider_theme'>Theme Activity</string>
+    <string name='raider_time'>Start Time</string>
+    <string name='raider_service'>Feedback</string>
+    <!--扫一扫-->
+    <string name='txt_scan'>swap</string>
+    <string name="scan_tip">Scam QR code in the frame. </string>
+
+    <string name='close'>close</string>
+    <string name='submit'>sure</string>
+    <string name="cancel">cancel</string>
+    <string name='query_hint'>Input number or name</string>
+    <string name='warm_tip'>Warm Prompt</string>
+    <string name='waiting'>…Please wait</string>
+    <string name='loading'>…Loading</string>
+    <string name='tui_jian_index'>Rating</string>
+    <string name='group_create'>Establish the Group</string>
+    <string name='group_join'>Join in the Group</string>
+    <string name='group_smart_service_online'>Smart Service Online</string>
+    <string name='group_nickname'>Nickname: </string>
+    <string name='group_id'>ID：</string>
+    <string name="group_no">My Group:</string>
+    <string name="group_create_succeed">The group is successfully established. Group No:</string>
+    <string name='net_not_available'>The network is not available. Please turn the network connection on in the settings.</string>
+    <string name='initializing'>...Initializing </string>
+    <string name='init_failed'>Failed to initialize, try again?</string>
+    <string name='retry'>Try again</string>
+    <string name='download'>download</string>
+    <string name='downloading'>...Downloading</string>
+    <string name='downloading_res'>...loading </string>
+    <string name='downloading_db'>Database Downloading </string>
+    <string name='unzipping'>...Uncompressing</string>
+    <string name='load_failed'>Download Failed</string>
+    <string name='load_succeed'>Download Succeeded</string>
+    <string name='clear_res_succeed'>Resources Eliminated </string>
+    <string name="modify_nickname">Change the Nickname </string>
+    <string name="tip_input_nickname">Please input the nickname</string>
+    <string name="modify_nickname_succeed">Alteration Succeeded</string>
+    <string name="visit">Visit</string>
+    <string name="railder">Tips</string>
+
+    <string name="education_digital">Digital Book    Sound Child Birth and Rearing </string>
+    <string name="information_develop">Development History of Information Technology</string>
+    <string name="what_say">What is this product about?</string>
+    <string name="write_comment">Make Comments...</string>
+
+
+
+
+
+    <string name="dada">DADA</string>
+    <string name="tourist_hengda">恒达旅行团</string>
+    <string name="mycompany">My Companion </string>
+    <string name="comment_detail">Comments </string>
+    <string name="jump">Ignore</string>
+    <string name="speech">Publish</string>
+    <string name="groupno">Please input the Group No.</string>
+    <string name="update">Update</string>
+    <string name="current_edit">Your software is up to date：</string>
+
+    <string name="open_time">Open Time</string>
+    <string name="down_success">Download Completed</string>
+    <string name="down_fail">Download failed</string>
+    <string name="res_exist">Some of the resources already exist, do you want to download all resources?</string>
+    <string name="down_all">download all resources？</string>
+    <string name="load_verson">...Loading</string>
+    <string name="click_again">Click again to exist</string>
+    <string name="net_error">Internet is not available</string>
+    <string name="feedback">Feedback</string>
+    <string name="leave_advice">Thanks for leaving your precious advice.</string>
+    <string name="enter_group">Enter group name：</string>
+    <string name="not_recognise">Can’t recognize QR code</string>
+    <string name="exist_group">Quit group</string>
+    <string name="survey">Questionnaire Survey</string>
+    <string name="no_comment">No Comments</string>
+    <string name="no_empty">The content input should not be empty</string>
+    <string name="current_version">Current verson is : </string>
+    <string name="location_where">You are on </string>
+    <string name="swipfloor">Would you like to switch to</string>
+    <string name="learnmore">Return to the list to learn more</string>
+    <string name="mylocation">My Location</string>
+    <string name="gxkj">Guangxi Science and Technology Museum
+</string>
+    <string name="voice_pot">Audio Introduction Spot</string>
+    <string name="vediopot">Video Introduction Spot</string>
+    <string name="neibpot">Nearby Introduction Spot</string>
+    <string name="iknow">Ok</string>
+    <string name="opreate">Operation failed, please try again</string>
+    <string name="othersigal">Signal of another exhibition area received. Do you want to enter it?</string>
+    <string name="permission_camera">扫描二维码需要照相机权限</string>
+    <string name="notice">Reminder</string>
+    <string name="exhibit">Exhibition</string>
+</resources>

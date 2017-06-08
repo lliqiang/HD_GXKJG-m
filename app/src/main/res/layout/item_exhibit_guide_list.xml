@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/topperson"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:visibility="invisible"
+    android:src="@mipmap/top"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+       android:layout_alignParentLeft="true"
+
+      />
+    <!-- android:layout_width="180dp"
+            android:layout_height="145dp"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_guide_list_item"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/llIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="12dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/commend_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="1dp"
+                android:singleLine="true"
+                android:text="@string/tui_jian_index"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+<!--   android:id="@+id/ratingBar"
+                style="@style/Rat"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="7dp"
+                android:clickable="true"
+                android:fadingEdge="horizontal"
+                android:isIndicator="true"
+                android:numStars="4"-->
+            <com.hengda.smart.common.widget.RatingBar
+
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rb_count="4"
+                app:rb_empty="@drawable/quew"
+                app:rb_fill="@drawable/start"
+                app:rb_max_count="4"
+                app:rb_space="20px"
+                app:rb_click_rating="false"
+                app:rb_touch_rating="false"
+
+
+
+                />
+            <!--<ff.RatingBar-->
+            <!--android:id="@+id/ratingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="7dp"-->
+            <!--app:halfstart="false"-->
+            <!--app:starCount="4"-->
+            <!--app:starEmpty="@mipmap/ic_star_nor"-->
+            <!--app:starFill="@mipmap/ic_star_chk"-->
+            <!--app:starNum="3"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llIndex"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLikeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_like"
+                android:drawablePadding="4dp"
+                android:textColor="@color/whiteLight"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

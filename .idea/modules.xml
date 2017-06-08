@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EasyQrlibrary/EasyQrlibrary.iml" filepath="$PROJECT_DIR$/EasyQrlibrary/EasyQrlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HD_Smart_GXKJ.iml" filepath="$PROJECT_DIR$/HD_Smart_GXKJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomdialog/bottomdialog.iml" filepath="$PROJECT_DIR$/bottomdialog/bottomdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unity/unity.iml" filepath="$PROJECT_DIR$/unity/unity.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengda.smart.gxkjg.ui.wdg.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slideview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <!-- <TextView
+                            android:id="@+id/tvTicket"
+                            style="@style/tv_raider_item"
+                            android:drawableTop="@mipmap/ic_a_raider_ticket"
+                            android:text="@string/raider_ticket"/>-->
+            <TextView
+                android:id="@+id/tvTicket"
+                style="@style/tv_raider_item"
+                android:drawableTop="@mipmap/ticket_info"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/raider_ticket" />
+
+            <TextView
+                android:id="@+id/tvRoute"
+                style="@style/tv_raider_item"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@mipmap/c_traffic"
+                android:text="@string/raider_route" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/tv_raider_item"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@mipmap/c_open"
+                android:text="@string/open_time" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPeer"
+                style="@style/tv_raider_item"
+                android:drawableTop="@mipmap/c_company"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/raider_peer" />
+
+            <TextView
+                android:id="@+id/tvTheme"
+                style="@style/tv_raider_item"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:drawableTop="@mipmap/c_theme"
+                android:text="@string/raider_theme" />
+
+            <TextView
+                android:id="@+id/tvService"
+                style="@style/tv_raider_item"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@mipmap/c_advice"
+                android:text="@string/raider_service" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.hengda.smart.gxkjg.ui.wdg.SlidingLayout>

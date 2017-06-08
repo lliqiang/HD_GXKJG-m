@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33BBBBBB"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+<!-- android:background="@android:drawable/edit_text"-->
+    <EditText
+        android:id="@+id/comment_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:lines="4"
+        android:singleLine="false"
+
+        android:paddingRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:hint="@string/write_comment"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:textColorHint="#808080"
+        android:scrollHorizontally="false"
+        android:paddingLeft="13dp"
+        android:textColor="#000" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/send_dialog"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center_vertical"
+
+        android:background="@drawable/btn_bg"
+        android:text="@string/speech"
+        android:textSize="15sp"
+        android:textColor="#808080"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+       />
+</LinearLayout>
+</LinearLayout>

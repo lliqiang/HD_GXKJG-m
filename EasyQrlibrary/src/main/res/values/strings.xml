@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">library</string>
+    <string name="auto_scan">把二维码放入框内，即可自动扫描</string>
+    <string name="scan">扫一扫</string>
+</resources>

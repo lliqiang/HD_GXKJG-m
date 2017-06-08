@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textColor="#888888"
+        android:visibility="gone"
+        android:text="00:00"
+        android:textSize="14sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:thumb="@mipmap/circle"
+        android:progressDrawable="@drawable/seek_bar_progress_drawable"
+        />
+<!--android:progressDrawable="@drawable/seek_bar_progress_drawable"-->
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:text="3:00"
+        android:layout_marginRight="18dp"
+        android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_main_adult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@mipmap/bg_act_a_main"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_main_act" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/flMainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fitsSystemWindows="true"></FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgMenuMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fdfdfe"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbGuide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/bg_a_rb_guide"
+            android:gravity="center"
+            android:text="@string/visit"
+            android:textColor="@color/color_text_a_rg_main_menu"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvAr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bg_a_rb_ar"
+            android:gravity="center"
+            android:text="AR"
+            android:textColor="@color/color_text_a_rg_main_menu"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rbRaiders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/bg_a_rb_raider"
+            android:gravity="center"
+            android:text="@string/railder"
+            android:textColor="@color/color_text_a_rg_main_menu"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

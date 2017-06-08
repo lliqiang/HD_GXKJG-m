@@ -1,0 +1,61 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* R.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In app-debug (1):
+* AndroidManifest.xml => appdebug1\src\main\AndroidManifest.xml
+* assets\ => appdebug1\src\main\assets
+* libs\classes.jar => appdebug1\libs\classes.jar
+* res\ => appdebug1\src\main\res\
+* src\ => appdebug1\src\main\java
+In guangxi1_fixed:
+* AndroidManifest.xml => guangxi1_fixed\src\main\AndroidManifest.xml
+* assets\ => guangxi1_fixed\src\main\assets\
+* libs\armeabi-v7a\libEasyAR.so => guangxi1_fixed\src\main\jniLibs\armeabi-v7a\libEasyAR.so
+* libs\armeabi-v7a\libEasyARUnity.so => guangxi1_fixed\src\main\jniLibs\armeabi-v7a\libEasyARUnity.so
+* libs\armeabi-v7a\libmain.so => guangxi1_fixed\src\main\jniLibs\armeabi-v7a\libmain.so
+* libs\armeabi-v7a\libmono.so => guangxi1_fixed\src\main\jniLibs\armeabi-v7a\libmono.so
+* libs\armeabi-v7a\libunity.so => guangxi1_fixed\src\main\jniLibs\armeabi-v7a\libunity.so
+* libs\EasyAR.jar => guangxi1_fixed\libs\EasyAR.jar
+* libs\unity-classes.jar => guangxi1_fixed\libs\unity-classes.jar
+* libs\x86\libmain.so => guangxi1_fixed\src\main\jniLibs\x86\libmain.so
+* libs\x86\libmono.so => guangxi1_fixed\src\main\jniLibs\x86\libmono.so
+* libs\x86\libunity.so => guangxi1_fixed\src\main\jniLibs\x86\libunity.so
+* res\ => guangxi1_fixed\src\main\res\
+* src\ => guangxi1_fixed\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
